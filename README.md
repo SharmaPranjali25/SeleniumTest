@@ -6,3 +6,4 @@
 5. Css Selectors are used that search web element in one direction (Top-->Bottom).
 6. Chained Xpath is used to search in any direction.
 7. Get Methods, Conditional Methods, Browser Methods, Navigational Commands are used.
+8. How to handle checkboxes and three different types of alerts using switchTo().alert()
