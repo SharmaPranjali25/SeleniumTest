@@ -7,5 +7,6 @@
 6. Chained Xpath is used to search in any direction.
 7. Get Methods, Conditional Methods, Browser Methods, Navigational Commands are used.
 8. How to handle checkboxes and three different types of alerts using switchTo().alert().
-9. How to Handle Frames.
+9. How to Handle Frames nad dropdowns.
+   
     
