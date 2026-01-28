@@ -17,11 +17,12 @@ public class SelectDropDown {
         driver.manage().window().maximize();
         WebElement dropcountryEle=driver.findElement(By.xpath("//select[@id='country']"));
         // capture drop down as element
+        //***************************************************//
         Select dropcountry= new Select(dropcountryEle); //select class object and in this pass dropdown element
 
         // select option from dropdown
         //dropcountry.selectByVisibleText("France");
-        // dropcountry.selectByValue("japan");
+        // dropcountry.selectByValue("japan"); //here we give values by inspect
         //dropcountry.selectByIndex(2);
 
         // capture the options from dropdown
