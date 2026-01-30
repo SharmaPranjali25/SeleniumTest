@@ -9,6 +9,9 @@
 8. How to handle checkboxes and three different types of alerts using switchTo().alert().
 9. How to Handle Frames and dropdowns.
 10. Use concept of Explicit and Implicit waits.
-11. Study how to handle wab tables (Static, dynamic and table with pagination.
+11. How to handle wab tables (Static, dynamic and table with pagination.
+12. How to do keyboard actions by Action and Robot Class, uploading a file, Robot File upload.
+13. JavaScript Executor.
+
    
     
