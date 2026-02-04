@@ -18,7 +18,7 @@ public class Screenshot {
         driver.manage().window().maximize();
         Thread.sleep(3000);
         // CLASS FILE
-        File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);//takescreenshot is interface
 
         Files.copy(
                 f.toPath(),
