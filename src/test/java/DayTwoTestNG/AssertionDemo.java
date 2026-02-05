@@ -3,20 +3,39 @@ package DayTwoTestNG;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class AssertionDemo {
     WebDriver driver;
+    @Parameters("browserName")
     @BeforeTest
-    public void initializeBrowser(){
-       driver=new ChromeDriver();
+    public void initializeBrowser(String browserName){
+        switch(browserName){
+            case "chrome":
+                driver=new ChromeDriver();
+                break;
+            case "edge":
+                driver=new EdgeDriver();
+                break;
+            case "firefox":
+                driver=new FirefoxDriver();
+                break;
+            default:
+                System.out.println("No valid browser passed + Error occured");
+
+        }
+
     }
+    @Parameters("url")
     @Test
-    public void login() {
-        driver.get("https://demoqa.com/");
+    public void login(String url) {
+        driver.get(url);
         driver.manage().window().maximize();
         String expectedTitle = "DEMOQAA";
         //String expectedTitle="DEMOQA";

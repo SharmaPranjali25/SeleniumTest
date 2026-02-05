@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <parameter name="browserName" value="Chrome"></parameter>
+    <parameter name="url" value="https://demoqa.com/"></parameter>
     <test name="C:/Users/hp/IdeaProjects/seleniumtest">
         <classes>
             <class name="DayThreeTestNG.AnnotationsDemo">
