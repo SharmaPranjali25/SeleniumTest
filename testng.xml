@@ -3,21 +3,10 @@
 <suite name="All Test Suite">
     <test name="C:/Users/hp/IdeaProjects/seleniumtest">
         <classes>
-            <class name="Day1.Test1">
-                <methods>
-                    <include name="setup"/>
-                </methods>
+            <class name="DayTwoTestNG.AssertionDemo">
+
             </class>
-            <class name="DayOneTestNG.DemoTestng1">
-                <methods>
-                    <include name="SignUp"/>
-                    <include name="Login"/>
-                    <include name="SearchForTheFlight"/>
-                    <include name="BookTheFlight"/>
-                    <include name="SaveTheTicket"/>
-                    <include name="Logout"/>
-                </methods>
-            </class>
+
         </classes>
     </test>
 </suite>
