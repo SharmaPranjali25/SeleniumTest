@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name="C:/Users/hp/IdeaProjects/seleniumtest">
         <classes>
-            <class name="DayTwoTestNG.AssertionDemo">
+            <class name="DayThreeTestNG.AnnotationsDemo">
 
             </class>
 
