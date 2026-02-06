@@ -8,6 +8,8 @@
 
         <classes>
             <class name="DayTwoTestNG.AssertionDemo"/>
+            <class name="DayThreeTestNG.AnnotationsDemo"/>
+
         </classes>
     </test>
     <test name="test2" enabled="false">

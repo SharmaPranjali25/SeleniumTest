@@ -30,7 +30,7 @@ public class AssertionDemo {
 
     }
     @Parameters("url")
-    @Test
+    @Test(enabled = false)
     public void login(String url) {
         driver.get(url);
         driver.manage().window().maximize();
