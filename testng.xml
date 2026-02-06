@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <parameter name="url" value="https://demoqa.com/"/>
 
-    <test name="Assertion Demo Test">
+    <test name="Assertion Demo Test" enabled="false">
         <parameter name="browserName" value="chrome"/>
 
         <classes>
@@ -20,5 +20,14 @@
             </class>
         </classes>
     </test>
+    <test name="test3" >
+        <parameter name="browserName" value="edge"/>
+        <classes>
+            <class name="DayFourTestNG.IgnoreDemo">
+
+            </class>
+        </classes>
+    </test>
+
 
 </suite>
