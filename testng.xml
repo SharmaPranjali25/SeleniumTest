@@ -20,7 +20,7 @@
             </class>
         </classes>
     </test>
-    <test name="test3" >
+    <test name="test3" enabled="false">
         <groups>
             <run>
 <!--                <include name="smoke">-->
@@ -42,6 +42,27 @@
             </class>
         </classes>
     </test>
+    <test name="test4" >
+        <groups>
+            <define name="dailyBuild">
+                <include name="smoke"></include>
+                <include name="sanity"/>
+
+            </define>
+            <run>
+               <include name="dailyBuild"></include>
+            </run>
+
+        </groups>
+
+        <classes>
+            <class name="DayFourTestNG.IgnoreDemo"/>
+            <class name="DayFourTestNG.IgnoreDemo2">
+
+            </class>
+        </classes>
+    </test>
+
 
 
 </suite>
