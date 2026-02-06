@@ -26,12 +26,12 @@
 <!--                <include name="smoke">-->
 
 <!--                </include>-->
-                <include name="sanity">
+                <include name="regression">
 
                 </include>
-                <include name="functional">
+                <exclude name="sanity">
 
-                </include>
+                </exclude>
             </run>
         </groups>
 <!--        <parameter name="browserName" value="edge"/>-->
