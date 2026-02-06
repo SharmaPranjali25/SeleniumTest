@@ -21,9 +21,17 @@
         </classes>
     </test>
     <test name="test3" >
-        <parameter name="browserName" value="edge"/>
+        <groups>
+            <run>
+                <include name="smoke">
+
+                </include>
+            </run>
+        </groups>
+<!--        <parameter name="browserName" value="edge"/>-->
         <classes>
-            <class name="DayFourTestNG.IgnoreDemo">
+            <class name="DayFourTestNG.IgnoreDemo"/>
+            <class name="DayFourTestNG.IgnoreDemo2">
 
             </class>
         </classes>
