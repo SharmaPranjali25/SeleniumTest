@@ -10,7 +10,7 @@
             <class name="DayTwoTestNG.AssertionDemo"/>
         </classes>
     </test>
-    <test name="test2">
+    <test name="test2" enabled="false">
         <parameter name="browserName" value="edge"/>
         <classes>
             <class name="DayTwoTestNG.AssertionDemo">
