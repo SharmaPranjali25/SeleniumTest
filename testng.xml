@@ -49,8 +49,14 @@
                 <include name="sanity"/>
 
             </define>
+            <define name="weeklyBuild">
+                <include name="functional"></include>
+                <include name="regression"/>
+
+            </define>
             <run>
                <include name="dailyBuild"></include>
+                <include name="weeklyBuild"></include>
             </run>
 
         </groups>
