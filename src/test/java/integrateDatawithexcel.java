@@ -17,7 +17,7 @@ public class integrateDatawithexcel {
     public void loginTest(String username, String password){
         System.out.println(username+"----------"+password);
     }
-
+// gives data in form od 2D array
     @DataProvider(name="CredentialsSupplier")
     public Object[][] dataSupplier() throws IOException, FileNotFoundException{
         // Creates a new, Empty excel workbook in memory
@@ -30,11 +30,15 @@ public class integrateDatawithexcel {
 
         //XSSFWorkBook: Apache POI class to work with .xlsx Excel files
         // convert the file we opened into a real Excel workbook object that we can read cells from.
+        //XSSFWorkbook is a class from Apache POI library (not built-in Java).
+        //It is used to work with .xlsx Excel files.
         XSSFWorkbook workbook=new XSSFWorkbook(fis);
-
         XSSFSheet sheet=workbook.getSheet("login");
         int rowCount=sheet.getLastRowNum();
         int columnCount= sheet.getRow(0).getLastCellNum();
+        //Why Object[][] ?
+        //Because Excel can contain:String,Number.Boolean
+        //So Object can store any type
         Object[][] data= new Object[rowCount][columnCount];
         //r+1= data from second row
         for(int r=0;r<rowCount;r++){
