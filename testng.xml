@@ -1,71 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite" parallel="tests">
-    <parameter name="url" value="https://demoqa.com/"/>
+<!--    <parameter name="url" value="https://demoqa.com/"/>-->
 
-    <test name="Assertion Demo Test" enabled="false">
-        <parameter name="browserName" value="chrome"/>
+<!--    <test name="Assertion Demo Test" enabled="false">-->
+<!--        <parameter name="browserName" value="chrome"/>-->
 
+<!--        <classes>-->
+<!--            <class name="DayTwoTestNG.AssertionDemo"/>-->
+<!--            <class name="DayThreeTestNG.AnnotationsDemo"/>-->
+
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="test2" enabled="false">-->
+<!--        <parameter name="browserName" value="edge"/>-->
+<!--        <classes>-->
+<!--            <class name="DayTwoTestNG.AssertionDemo">-->
+
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="test3" enabled="false">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                &lt;!&ndash;                <include name="smoke">&ndash;&gt;-->
+
+<!--                &lt;!&ndash;                </include>&ndash;&gt;-->
+<!--                <include name="regression">-->
+
+<!--                </include>-->
+<!--                <exclude name="sanity">-->
+
+<!--                </exclude>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        &lt;!&ndash;        <parameter name="browserName" value="edge"/>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="DayFourTestNG.IgnoreDemo"/>-->
+<!--            <class name="DayFourTestNG.IgnoreDemo2">-->
+
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="test4" >-->
+<!--        <groups>-->
+<!--            <define name="dailyBuild">-->
+<!--                <include name="smoke"></include>-->
+<!--                <include name="sanity"/>-->
+
+<!--            </define>-->
+<!--            <define name="weeklyBuild">-->
+<!--                <include name="functional"></include>-->
+<!--                <include name="regression"/>-->
+
+<!--            </define>-->
+<!--            <run>-->
+<!--                <include name="dailyBuild"></include>-->
+<!--                <include name="weeklyBuild"></include>-->
+<!--            </run>-->
+
+<!--        </groups>-->
+
+<!--        <classes>-->
+<!--            <class name="DayFourTestNG.IgnoreDemo"/>-->
+<!--            <class name="DayFourTestNG.IgnoreDemo2">-->
+
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="test2">
         <classes>
-            <class name="DayTwoTestNG.AssertionDemo"/>
-            <class name="DayThreeTestNG.AnnotationsDemo"/>
-
-        </classes>
-    </test>
-    <test name="test2" enabled="false">
-        <parameter name="browserName" value="edge"/>
-        <classes>
-            <class name="DayTwoTestNG.AssertionDemo">
-
-            </class>
-        </classes>
-    </test>
-    <test name="test3" enabled="false">
-        <groups>
-            <run>
-                <!--                <include name="smoke">-->
-
-                <!--                </include>-->
-                <include name="regression">
-
-                </include>
-                <exclude name="sanity">
-
-                </exclude>
-            </run>
-        </groups>
-        <!--        <parameter name="browserName" value="edge"/>-->
-        <classes>
-            <class name="DayFourTestNG.IgnoreDemo"/>
-            <class name="DayFourTestNG.IgnoreDemo2">
-
-            </class>
-        </classes>
-    </test>
-    <test name="test4" >
-        <groups>
-            <define name="dailyBuild">
-                <include name="smoke"></include>
-                <include name="sanity"/>
-
-            </define>
-            <define name="weeklyBuild">
-                <include name="functional"></include>
-                <include name="regression"/>
-
-            </define>
-            <run>
-                <include name="dailyBuild"></include>
-                <include name="weeklyBuild"></include>
-            </run>
-
-        </groups>
-
-        <classes>
-            <class name="DayFourTestNG.IgnoreDemo"/>
-            <class name="DayFourTestNG.IgnoreDemo2">
-
-            </class>
+            <class name="DaySevenTestNG.timeoutDemo"></class>
         </classes>
     </test>
 
