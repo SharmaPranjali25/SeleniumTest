@@ -82,6 +82,8 @@
     <test name="test3">
         <classes>
             <class name="DaySevenTestNG.parallelExecution"></class>
+<!--            for parallel=classes-->
+<!--            <class name="DaySevenTestNG.parallelExecution"></class>-->
 
         </classes>
     </test>
