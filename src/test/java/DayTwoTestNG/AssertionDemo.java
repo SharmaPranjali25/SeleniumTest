@@ -25,6 +25,7 @@ public class AssertionDemo {
                 break;
             default:
                 System.out.println("No valid browser passed + Error occured");
+                // return; return from entire function initializeBrowser
 
         }
 

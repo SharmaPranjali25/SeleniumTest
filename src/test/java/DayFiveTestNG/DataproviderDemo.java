@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -19,12 +20,13 @@ public class DataproviderDemo {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
     }
-    @Test
-    void testLogin() throws InterruptedException {
+    //dataprovider: attribute of test annotation
+    @Test(dataProvider = "dp")
+    void testLogin(String email, String pwd) throws InterruptedException {
         driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("abc@gmail.com");
-        driver.findElement(By.xpath("//input[@id='input-passowrd']")).sendKeys("test@123");
+        driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys(email);
+        driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys(pwd);
         driver.findElement(By.xpath("//input[@value='Login']")).click();
         Thread.sleep(2000);
         boolean status=driver.findElement(By.xpath("//h2[normalize-space()='My Account']")).isDisplayed();
@@ -38,7 +40,27 @@ public class DataproviderDemo {
 
     }
     @AfterClass
-    void tearDown(){}
+    void tearDown(){
+        driver.close();
+    }
+    //creation and returning the test data
+//    @DataProvider: alwaya return 2D Array
+    @DataProvider(name="dp")
+    Object[][] loginData()
+    {
+        Object data[][]={
+                {"abc@gmail.com","test123"},
+                {"xyz@gmail.com","test023"},
+                {"john@gmail.com","test@123"},
+                {"sharmapranjali115@gmail.com","1234567890"},
+                {"johncanedy@gmail.com","test"},
+
+
+
+        };
+        return data;
+    }
+    //indices={0,3,4} --> specify rows
 
 
 

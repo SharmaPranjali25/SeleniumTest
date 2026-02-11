@@ -23,9 +23,9 @@
     <test name="test3" enabled="false">
         <groups>
             <run>
-<!--                <include name="smoke">-->
+                <!--                <include name="smoke">-->
 
-<!--                </include>-->
+                <!--                </include>-->
                 <include name="regression">
 
                 </include>
@@ -34,7 +34,7 @@
                 </exclude>
             </run>
         </groups>
-<!--        <parameter name="browserName" value="edge"/>-->
+        <!--        <parameter name="browserName" value="edge"/>-->
         <classes>
             <class name="DayFourTestNG.IgnoreDemo"/>
             <class name="DayFourTestNG.IgnoreDemo2">
@@ -55,7 +55,7 @@
 
             </define>
             <run>
-               <include name="dailyBuild"></include>
+                <include name="dailyBuild"></include>
                 <include name="weeklyBuild"></include>
             </run>
 
