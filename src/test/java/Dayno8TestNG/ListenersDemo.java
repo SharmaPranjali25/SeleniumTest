@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-@Listeners(Dayno8TestNG.MyListener.class)
+//@Listeners(Dayno8TestNG.MyListener.class)
 public class ListenersDemo {
     WebDriver driver;
     @BeforeClass
